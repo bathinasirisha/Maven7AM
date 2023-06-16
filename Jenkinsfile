@@ -13,7 +13,7 @@ pipeline
            stage('clone')
                {
                 steps {
-                      sh 'git pull https://github.com/bathinasirisha/hello-world.git'
+                      sh 'git pull https://github.com/bathinasirisha/Maven7AM.git'
                       sh 'ls -la'
                       }
                }
