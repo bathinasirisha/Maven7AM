@@ -33,7 +33,7 @@ pipeline
             stage('Depoly to tomcat') {
                   steps {
                        sh 'curl -O http://localhost:8081/repository/siri/com/jdevs/CloudGen/4.0/CloudGen-4.0.war'
-                      sh 'cp http://localhost:8081/repository/siri/com/jdevs/CloudGen/4.0/CloudGen-4.0.war /opt/tomcat/webapps/CloudGen-4.0'
+                      sh 'cp http://localhost:8081/repository/siri/com/jdevs/CloudGen/4.0/CloudGen-4.0.war /opt/tomcat/webapps/CloudGen-4.0.war'
                }
            }
   }
