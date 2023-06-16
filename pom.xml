@@ -13,7 +13,7 @@
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
-        </configuration>
+        
          <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -22,7 +22,7 @@
                 
             </plugin>
         </plugins>
-    
+    </configuration>
 <!--- Hello this is comment line in this file, we can write any thing in the comment line, 
 
 Here we are giving war package format
