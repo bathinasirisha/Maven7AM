@@ -4,6 +4,23 @@
   <artifactId>CloudGen</artifactId>
   <version>1</version>
   <packaging>war</packaging>
+<dependencies>
+        <!-- Dependency 1 with version 1.0.0 -->
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>dependency1</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        
+        <!-- Dependency 2 with version 2.0.0 -->
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>dependency2</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        
+        <!-- Other dependencies -->
+    </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -47,20 +64,6 @@ Here we are giving war package format
   
   <dependencies>
     <dependency>
-        <groupId>com.google.guava</groupId>
-        <artifactId>guava</artifactId>
-        <version>22.0</version>
-    </dependency>
-    
-    <dependency>
-        <groupId>com.google.guava</groupId>
-        <artifactId>guava</artifactId>
-        <version>29.0-jre</version>
-    </dependency>
-
-  
-  
-  	<dependency>
   		<groupId>javax.servlet</groupId>
   		<artifactId>javax.servlet-api</artifactId>
   		<version>3.0.1</version>
