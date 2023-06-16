@@ -41,7 +41,7 @@ Here we are giving war package format
         <snapshotRepository>
             <id>deployment</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://localhost:8081/repository/sirinap/</url>
+            <url>http://localhost:8081/repository/siri-snap/</url>
         </snapshotRepository>
     </distributionManagement>
   <dependencies>
