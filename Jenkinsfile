@@ -20,10 +20,7 @@ pipeline
             stage('excute maven') {
                   steps {
                         sh 'mvn clean'
-                       
-
-                        
-                        }
+                       }
                }
             stage('Deploy to Nexus') {
             steps {
