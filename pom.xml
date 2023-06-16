@@ -14,7 +14,18 @@
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
-
+<build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <!-- Configuration options for the plugin -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 <!--- Hello this is comment line in this file, we can write any thing in the comment line, 
 
 Here we are giving war package format
