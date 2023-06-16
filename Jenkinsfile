@@ -30,7 +30,7 @@ pipeline
             stage('Depoly to tomcat') {
                   steps {
                        sh 'curl -O http://localhost:8081/repository/siri/com/jdevs/CloudGen/4.0/CloudGen-4.0.war'
-                       sh 'pwd'
+                       sh 'cp /root/.jenkins/workspace/pipeline_job/CloudGen-4.0.war /opt/tomcat/apache-tomcat-8.5.88/webapps/'
                       }
            }
   }
