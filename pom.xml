@@ -10,6 +10,14 @@
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.3</version>
+        <executions>
+                    <execution>
+                        <id>default-deploy</id>
+                        <configuration>
+                            <skip>true</skip>
+                        </configuration>
+                    </execution>
+        </excutions>
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
