@@ -51,16 +51,15 @@ Here we are giving war package format
         <artifactId>guava</artifactId>
         <version>22.0</version>
     </dependency>
-    </dependencies>
-   <dependencies>
+    
     <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
         <version>29.0-jre</version>
     </dependency>
-</dependencies>
+
   
-  <dependencies>
+  
   	<dependency>
   		<groupId>javax.servlet</groupId>
   		<artifactId>javax.servlet-api</artifactId>
