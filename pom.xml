@@ -1,13 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  
-
-    <!-- Project details -->
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.jdevs</groupId>
   <artifactId>CloudGen</artifactId>
-  <version>2</version>
+  <version>2.0</version>
   <packaging>war</packaging>
-
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -45,17 +41,14 @@ Here we are giving war package format
         <snapshotRepository>
             <id>deployment</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://localhost:8081/repository/siri-snap/</url>
+            <url>http://localhost:8081/repository/sirinap/</url>
         </snapshotRepository>
     </distributionManagement>
-  
-        <dependencies>
-        
-       <dependency>
+  <dependencies>
+  	<dependency>
   		<groupId>javax.servlet</groupId>
   		<artifactId>javax.servlet-api</artifactId>
   		<version>3.0.1</version>
   	</dependency>
   </dependencies>
-</project>
 </project>
