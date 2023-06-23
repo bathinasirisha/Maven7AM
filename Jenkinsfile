@@ -33,5 +33,13 @@ pipeline
                        sh 'cp /root/.jenkins/workspace/pipeline_job/CloudGen-3.0.war /opt/tomcat/apache-tomcat-8.5.88/webapps/'
                       }
            }
+
+    stage('SonarQube Analysis') {
+      steps {
+        withSonarQubeEnv('SonarQubeServerConfigName') {
+          sh 'mvn sonar:sonar'
+        }
+      }
+    }
   }
 }
