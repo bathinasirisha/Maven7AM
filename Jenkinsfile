@@ -22,17 +22,7 @@ pipeline
                         sh 'mvn clean'
                        }
                }
-            stage('Deploy to Nexus') {
-            steps {
-               sh 'mvn deploy'
-            }
-        }
-            stage('Depoly to tomcat') {
-                  steps {
-                       sh 'curl -O http://localhost:8081/repository/siri/com/jdevs/CloudGen/3.0/CloudGen-3.0.war'
-                       sh 'cp /root/.jenkins/workspace/pipeline_job/CloudGen-3.0.war /opt/tomcat/apache-tomcat-8.5.88/webapps/'
-                      }
-           }
+           
 
    stage('SonarQube analysis') {
         steps{
