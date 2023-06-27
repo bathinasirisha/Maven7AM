@@ -34,10 +34,10 @@ pipeline
                       }
            }
 
-    stage('SonarQube Analysis') {
-      steps {
-        withSonarQubeEnv('SonarQubeServerConfigName') {
-          sh 'mvn sonar:sonar'
+   stage('SonarQube analysis') {
+        steps{
+        withSonarQubeEnv('sonarqube-9.9.1') { 
+        sh "mvn sonar:sonar"
         }
       }
     }
